@@ -63,6 +63,9 @@ $grey: #B4B3B3;
       text-decoration: line-through;
       color:$grey;
       border-bottom:2px solid $grey;
+      &::after {
+        content:'done';
+      }
     }
   }
   .edit,
