@@ -1,0 +1,37 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  font-family: "aktiv-grotesk-std",sans-serif;
+  width:780px;
+  margin:0 auto;
+  -webkit-font-smoothing:antialiased;
+  .header {
+    padding:60px 0 40px 0;
+    @include clearfix;
+  }
+  .header__logo {
+    font-weight:800;
+    font-size:20px;
+    text-decoration:none;
+    color:#000;
+    float:left;
+  }
+  .menu__icon {
+    float:right;
+    font-size:26px;
+  }
+}
+
+.main__title {
+  font-size:24px;
+  font-weight:800;
+  width:460px;
+  text-align:center;
+  margin:0 auto;
+}
