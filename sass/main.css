@@ -26,4 +26,46 @@
   text-align: center;
   margin: 0 auto; }
 
+.edit {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+#todo-list {
+  width: 340px;
+  margin: 60px auto 0 auto; }
+  #todo-list li {
+    margin: 30px 0; }
+    #todo-list li:after {
+      content: "";
+      display: table;
+      clear: both; }
+  #todo-list .completed .edit {
+    text-decoration: line-through;
+    color: #B4B3B3;
+    border-bottom: 2px solid #B4B3B3; }
+  #todo-list .edit,
+  #todo-list new-todo {
+    width: 300px;
+    background: none;
+    border: none;
+    font-weight: 800;
+    border-bottom: 2px solid #000;
+    font-size: 20px; }
+    #todo-list .edit:focus,
+    #todo-list new-todo:focus {
+      outline: none; }
+  #todo-list .view,
+  #todo-list .input-container {
+    float: left; }
+  #todo-list .view {
+    margin-right: 20px; }
+
+#todo-form {
+  width: 300px;
+  margin: 0 auto;
+  padding-left: 10px; }
+
 /*# sourceMappingURL=main.css.map */
